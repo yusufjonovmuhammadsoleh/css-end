@@ -28,21 +28,25 @@
               nav ul:nth-child(3){
                 display: none;
             }
-              nav ul:nth-child(4){
+              /* nav ul:nth-child(4){
                 display: block;
-            }
-            #d1{
+            } */
+            #d2{
                 display: grid;
                 grid-template-columns: 1fr;
-                place-items: center;
-                place-content: center;
-                font-size: 20px;
+                font-size: 19px;
                 padding: 20px;
                 margin-top: 30px;
             }
+            #d1 img{
+                display: none;
+            }
             #d4{
-                display: grid;
-                justify-content: center;
+                display: flex;
+                justify-content: start;
+            }
+            #d3{
+                display: none;
             }
             #d5{
                 gap: 60px;
@@ -56,13 +60,18 @@
                 display: block;
             }
             #d9{
-               
-                flex-wrap: wrap;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-wrap: wrap;
+                /* display: grid;
+                grid-template-columns: 100% 0%;
+               gap: 300px;
+               margin: 90px; */
             }
             #d10{
-                width: 100%;
+                width: 500px;
                 margin: 20px;
-
             }
             #d10 img{
                 display: none;
@@ -76,6 +85,26 @@
             #d13{
                 flex-wrap: wrap;
             }
+            #d14{
+                margin: 40px;
+            }
+            #d17{
+                margin: 40px; 
+            } 
+            #d18{
+                display: grid;
+            }
+            #d19{
+               padding: 30px;
+            }
+            #d20{
+                display: grid;
+            }
+            footer{
+                flex-wrap: wrap;
+                height: 1200px;
+            }
+            
           
         }
      
@@ -108,9 +137,7 @@
                 <img src="./Wishlist.png" alt="">
                 <img src="./Cart1 with buy.png" alt="">
             </ul>
-            <ul class="none">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </ul>
+           
         </nav>
         <hr>
         <div id="d1" class="flex items-center justify-center gap-[90px] mt-[50px] m-[30px] ">
@@ -150,10 +177,10 @@
     <main>
         <div id="d4" class="flex gap-[8px] items-center mt-[50px] ml-[120px]">
             <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
-            <h3 class="text-[red] text-[30px] ">Today’s</h3>
+            <h3  class="text-[red] text-[30px] ">Today’s</h3>
         </div>
         <div id="d5" class="flex items-center justify-evenly ">
-            <div class="flex gap-[90px]">
+            <div id="d15" class="flex gap-[90px]">
                 <h1 class="text-[40px] font-[700]">Flash Sales</h1>
                 <div id="d12" class="flex items-center gap-[10px]">
                     <span class="font-[600]">
@@ -297,7 +324,7 @@
             <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
             <h3 class="text-[red] text-[30px] ">Categories</h3>
         </div>
-        <div class="flex items-center justify-around">
+        <div id="d14" class="flex items-center justify-around">
             <div class="flex gap-[90px]">
                 <h1 class="text-[40px] font-[700]">Browse By Category</h1>
             </div>
@@ -354,7 +381,7 @@
                 <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
                 <h3 class="text-[red] text-[30px] ">This Month</h3>
             </div>
-            <div class="flex items-center justify-around">
+            <div id="d17" class="flex items-center justify-around">
                 <div class="flex gap-[90px]">
                     <h1 class="text-[40px] font-[700]">Best Selling Products</h1>
                 </div>
@@ -465,7 +492,7 @@
             </div>
         </section>
 
-        <section id="d10" class="flex items-center justify-around h-[500px] bg-[#000000] mt-[50px]">
+        <section id="d10" class="flex items-center justify-around h-[500px] w-[100%] bg-[#000000] mt-[50px]">
             <div>
                 <p class="text-[#00FF66]">Categories</p>
                 <h1 class="text-[white] text-[45px]">Enhance Your <br> Music Experience</h1>
@@ -499,7 +526,7 @@
             <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
             <h3 class="text-[red] text-[30px] ">Our Products</h3>
         </div>
-        <div class="flex items-center justify-around">
+        <div id="19" class="flex items-center justify-around">
             <div class="flex gap-[90px]">
                 <h1 class="text-[40px] font-[700]">Explore Our Products</h1>
             </div>
@@ -509,7 +536,7 @@
             </div>
         </div>
 
-        <section class=" flex justify-center gap-[20px] font-[600] mt-[30px]">
+        <section id="d18" class=" flex justify-center gap-[20px] font-[600] mt-[30px]">
             <!-- 1 -->
             <div>
                 <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
@@ -695,7 +722,7 @@
             </section>
 
 
-            <section class="flex justify-center mt-[60px] gap-[80px]">
+            <section id="d20" class="flex justify-center mt-[60px] gap-[80px]">
                 <div>
                     <center>
                         <img src="./Services.png" alt="">
