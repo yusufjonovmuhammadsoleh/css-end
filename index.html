@@ -8,19 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         nav {
-            position: fixed;
-            background: white;
-            border-bottom: 1px solid black;
-            top: 0px;
-            left: 0px;
-            z-index: 2;
+         
         }
         input{
             outline: none;
         }
         @media only screen and (max-width:768px){
             nav{
-               padding: 19px; 
+                
             }
             nav ul:nth-child(2){
                 display: none;
@@ -28,15 +23,15 @@
               nav ul:nth-child(3){
                 display: none;
             }
-              /* nav ul:nth-child(4){
+              nav ul:nth-child(4){
                 display: block;
-            } */
+            }
             #d2{
                 display: grid;
                 grid-template-columns: 1fr;
                 font-size: 19px;
-                padding: 20px;
-                margin-top: 30px;
+                padding: 10px;
+                margin-top: 10px;
             }
             #d1 img{
                 display: none;
@@ -70,8 +65,8 @@
                margin: 90px; */
             }
             #d10{
-                width: 500px;
-                margin: 20px;
+                width: 100%;
+                margin: 10px;
             }
             #d10 img{
                 display: none;
@@ -86,23 +81,34 @@
                 flex-wrap: wrap;
             }
             #d14{
-                margin: 40px;
+                margin: 50px;
             }
             #d17{
-                margin: 40px; 
+                margin: 0px;
+                font-size: 12px; 
+                 margin: 70px;
             } 
+            #d17 button{
+                width: 80px;
+               
+            }
             #d18{
                 display: grid;
             }
             #d19{
-               padding: 30px;
+               
             }
             #d20{
                 display: grid;
+                margin-right: 120px;
+            }
+            #d21{
+                display: none;
             }
             footer{
                 flex-wrap: wrap;
                 height: 1200px;
+                
             }
             
           
@@ -136,6 +142,9 @@
                     placeholder="What are you looking for?  ">
                 <img src="./Wishlist.png" alt="">
                 <img src="./Cart1 with buy.png" alt="">
+            </ul>
+            <ul class="none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </ul>
            
         </nav>
@@ -702,7 +711,7 @@
                 <h1 class="text-[40px] font-[700]">Explore Our Products</h1>
             </div>
 
-            <section class="flex justify-around mt-[50px]">
+            <section id="d21" class="flex justify-around mt-[50px]">
                 <div class="w-[570px] h-[600px] rounded-[4px] bg-[#000000]">
                     <center> <img class="mt-[80px]" src="./a1.png" alt=""></center>
                 </div>
