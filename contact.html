@@ -5,6 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style>
+           @media only screen and (max-width:768px){
+            nav{
+                
+            }
+            nav ul:nth-child(2){
+                display: none;
+            }
+              nav ul:nth-child(3){
+                display: none;
+            }
+              nav ul:nth-child(4){
+                display: block;
+            }
+            #d1{
+                display: grid;
+            }
+               footer{
+                flex-wrap: wrap;
+                height: 1200px;
+                width: 100%;
+                margin: 10px;
+                
+            }
+            #d1{
+                display: grid;
+                place-items: center;
+                margin: 10px;
+            }
+            #d2{
+                display: grid;
+                border: 1px solid black;
+                width: 100%;
+            }
+            #d3{
+                display: grid;
+                margin: 10px;
+            }
+            #d4{
+                width: 100%;
+            }
+               footer{
+                flex-wrap: wrap;
+                height: 1200px;
+                width: 100%;
+                margin: 10px;
+                
+            }
+        }
+     </style>
 </head>
 <body>
      <nav class="w-[100%] h-[70px] flex items-center justify-around ">
@@ -30,14 +80,17 @@
                 <img src="./Wishlist.png" alt="">
                 <img src="./Cart1 with buy.png" alt="">
             </ul>
+             <ul class="none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </ul>
         </nav>
         <hr>
    
         <main>
             <h1 class="text-[22px] m-[50px]" ><span class="text-[#F5F5F5]">Home  / </span> Home</h1>
 
-            <section class="flex  justify-around">
-                <div class="leading-[40px] w-[340px] h-[457px] font-[500] p-[18px] border border-[#F5F5F5]">
+            <section id="d1" class="flex  justify-around">
+                <div id="d2" class="leading-[40px] w-[340px] h-[457px] font-[500] p-[18px] border border-[#F5F5F5]">
                    <div class="flex gap-[20px]">
                      <img src="./icons-phone.png" alt="">
                     <h1>Call To Us</h1>
@@ -56,12 +109,12 @@
                 </div>
                 </div>
                 <div class=" w-[800px] h-[457px] font-[500] p-[40px] border border-[#F5F5F5]">
-                    <div>
+                    <div id="d3">
                         <input class="w-[235px] h-[50px] rounded-[4px] bg-[#F5F5F5] p-[14px]" type="text" placeholder="Your Name * ">
                         <input class="w-[235px] h-[50px] rounded-[4px] bg-[#F5F5F5] p-[14px]"  type="email" placeholder="Your Email *">
                         <input class="w-[235px] h-[50px] rounded-[4px] bg-[#F5F5F5] p-[14px]"  type="number" placeholder="Your Phone *">
                     </div>
-                    <div class="mt-[40px]">
+                    <div id="d4" class="mt-[40px]">
                         <input class="w-[715px] h-[207px] rounded-[4px] bg-[#F5F5F5] p-[14px] "  type="text" placeholder="Your Massage">
                     </div>
                     <button  class="w-[215px] h-[56px] rounded-[4px]  mt-[25px] bg-[#DB4444] ml-[500px] text-[white] flex items-center justify-center " >Send Massage</button>

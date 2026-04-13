@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+     <style>
+           @media only screen and (max-width:768px){
+            nav{
+                
+            }
+            nav ul:nth-child(2){
+                display: none;
+            }
+              nav ul:nth-child(3){
+                display: none;
+            }
+              nav ul:nth-child(4){
+                display: block;
+            }
+            #d1{
+                display: grid;
+            }
+               footer{
+                flex-wrap: wrap;
+                height: 1200px;
+                width: 100%;
+                margin: 10px;
+                
+            }
+            #d1{
+                display: grid;
+                place-items: center;
+                margin: 10px;
+            }
+            #d2{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+            }
+            #d3{
+                display: grid;
+                margin: 10px;
+            }
+               footer{
+                flex-wrap: wrap;
+                height: 1200px;
+                width: 100%;
+                margin: 10px;
+                
+            }
+        }
+     </style>
 </head>
 <body>
           <nav class=" w-[100%] h-[70px] flex items-center justify-around ">
@@ -30,12 +78,15 @@
                 <img src="./Wishlist.png" alt="">
                 <img src="./Cart1 with buy.png" alt="">
             </ul>
+             <ul class="none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </ul>
         </nav>
         <hr>
         
         <main>
                         <h1 class="text-[22px] m-[50px]" ><span class="text-[#F5F5F5]">Home  / </span> About</h1>
-        <section class="flex items-center justify-around">
+        <section id="d1" class="flex items-center justify-around">
             <div class="w-[525px]">
                 <h1 class="text-[50px] font-[600]" >Our Story</h1>
                 <p >Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the region. </p>
@@ -47,7 +98,7 @@
         </section>
 
 
-        <section class="flex justify-around mt-[80px]">
+        <section id="d2" class="flex justify-around mt-[80px]">
             <div class="w-[270px] h-[230px] border border-[#F5F5F5] pt-[40px]">
                 <center>
                     <img src="./Services (3).png" alt="">
@@ -83,7 +134,7 @@
 
         </section>
 
-        <section class="flex justify-around items-center mt-[90px]">
+        <section id="d3" class="flex justify-around items-center mt-[90px]">
             <div>
                 <div class="w-[370px] h-[430px] bg-[#F5F5F5] flex items-end justify-center">
                     <img src="./image 46.png" alt="">
