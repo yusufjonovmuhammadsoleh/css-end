@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+-<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        nav {
+            position: fixed;
+            background: white;
+            border-bottom: 1px solid black;
+            top: 0px;
+            left: 0px;
+            z-index: 2;
+        }
+        input{
+            outline: none;
+        }
+        @media only screen and (max-width:768px){
+            nav{
+               padding: 19px; 
+            }
+            nav ul:nth-child(2){
+                display: none;
+            }
+              nav ul:nth-child(3){
+                display: none;
+            }
+              nav ul:nth-child(4){
+                display: block;
+            }
+            #d1{
+                display: grid;
+                grid-template-columns: 1fr;
+                place-items: center;
+                place-content: center;
+                font-size: 20px;
+                padding: 20px;
+                margin-top: 30px;
+            }
+            #d4{
+                display: grid;
+                justify-content: center;
+            }
+            #d5{
+                gap: 60px;
+            }
+            #d7{
+                display: grid;
+                gap: 30px;
+                margin: 20%;
+            }
+            #d8{
+                display: block;
+            }
+            #d9{
+               
+                flex-wrap: wrap;
+            }
+            #d10{
+                width: 100%;
+                margin: 20px;
+
+            }
+            #d10 img{
+                display: none;
+            }
+            #d11{
+                flex-wrap: wrap;
+            }
+            #d12{
+                display: none;
+            }
+            #d13{
+                flex-wrap: wrap;
+            }
+          
+        }
+     
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class=" w-[100%] h-[70px] flex items-center justify-around  ">
+            <ul>
+                <h1 class="text-[40px] font-[800]" max-sm:block>Exclusive</h1>
+            </ul>
+            <ul class="flex items-center gap-[40px]">
+                <li>
+                    <a href=".#">Home</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./sign up.html">Sign Up</a>
+                </li>
+            </ul>
+            <ul class="flex items-center gap-[15px]">
+                <input class="w-[243px] h-[38px] bg-[#F5F5F5] pl-[7px] rounded-[12px] text-[12px]" type="search"
+                    placeholder="What are you looking for?  ">
+                <img src="./Wishlist.png" alt="">
+                <img src="./Cart1 with buy.png" alt="">
+            </ul>
+            <ul class="none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </ul>
+        </nav>
+        <hr>
+        <div id="d1" class="flex items-center justify-center gap-[90px] mt-[50px] m-[30px] ">
+            <div id="d2" class="list-none text-[16px] font-[400] leading-[33px] ">
+                <li>
+                    <a href="">Woman’s Fashion</a>
+                </li>
+                <li>
+                    <a href="">Men’s Fashion</a>
+                </li>
+                <li>
+                    <a href="">Electronics</a>
+                </li>
+                <li>
+                    <a href="">Home & Lifestyle</a>
+                </li>
+                <li>
+                    <a href="">Medicine</a>
+                </li>
+                <li>
+                    <a href="">Sports & Outdoor</a>
+                </li>
+                <li>
+                    <a href="">Baby’s & Toys</a>
+                </li>
+                <li>
+                    <a href="">Groceries & Pets</a>
+                </li>
+                <li>
+                    <a href="">Health & Beauty</a>
+                </li>
+            </div>
+            <div id="d3" class="w-[1px] h-[360px] rounded-[99px] bg-[#F5F5F5]"></div>
+            <img class="w-[100%] h-[auto]" src="./Frame 560.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div id="d4" class="flex gap-[8px] items-center mt-[50px] ml-[120px]">
+            <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
+            <h3 class="text-[red] text-[30px] ">Today’s</h3>
+        </div>
+        <div id="d5" class="flex items-center justify-evenly ">
+            <div class="flex gap-[90px]">
+                <h1 class="text-[40px] font-[700]">Flash Sales</h1>
+                <div id="d12" class="flex items-center gap-[10px]">
+                    <span class="font-[600]">
+                        <p>Days</p>
+                        <h1>03</h1>
+                    </span>
+                    <h1 class="text-[30px] text-[red]">:</h1>
+                    <span class="font-[600]">
+                        <p>Hours</p>
+                        <h1>23</h1>
+                    </span>
+                    <h1 class="text-[30px] text-[red]">:</h1>
+                    <span class="font-[600]">
+                        <p>Minutes</p>
+                        <h1>19</h1>
+                    </span>
+                    <h1 class="text-[30px] text-[red]">:</h1>
+                    <span class="font-[600]">
+                        <p>Seconds</p>
+                        <h1>56</h1>
+                    </span>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="./Fill With Left Arrow.png" alt="">
+                <img src="./Fill with Right Arrow.png" alt="">
+            </div>
+        </div>
+        <section id="d7" class=" flex justify-center gap-[20px] font-[600] mt-[30px]">
+            <!-- 1 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div class="w-[55px] h-[26px] rounded-[4px] text-[white] bg-[#DB4444] pl-[9px]">
+                                <h1>-40%</h1>
+                            </div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img src="./djostik.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>HAVIT HV-G92 Gamepad</h1>
+                    <h1 class="text-[#DB4444]">$120 <span class="text-[#000000]">$160</span></h1>
+                    <h1>⭐⭐⭐⭐⭐ (88)</h1>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div class="w-[55px] h-[26px] rounded-[4px] text-[white] bg-[#DB4444] pl-[9px]">
+                                <h1>-35%</h1>
+                            </div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img src="./klaviatura.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>AK-900 Wired Keyboard</h1>
+                    <h1 class="text-[#DB4444]">$960 <span class="text-[#000000]">$1160</span></h1>
+                    <h1>⭐⭐⭐⭐⭐ (75)</h1>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div class="w-[55px] h-[26px] rounded-[4px] text-[white] bg-[#DB4444] pl-[9px]">
+                                <h1>-30%</h1>
+                            </div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img class="mt-[10px]" src="./televizor.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>IPS LCD Gaming Monitor</h1>
+                    <h1 class="text-[#DB4444]">$370 <span class="text-[#000000]">$400</span></h1>
+                    <h1>⭐⭐⭐⭐⭐ (99)</h1>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div class="w-[55px] h-[26px] rounded-[4px] text-[white] bg-[#DB4444] pl-[9px]">
+                                <h1>-25%</h1>
+                            </div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img class="w-[90px]" src="./stul.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>S-Series Comfort Chair </h1>
+                    <h1 class="text-[#DB4444]">$375 <span class="text-[#000000]">$400</span></h1>
+                    <h1>⭐⭐⭐⭐⭐ (88)</h1>
+                </div>
+            </div>
+        </section>
+        <center>
+            <button class="w-[234px] h-[56px] bg-[#DB4444] rounded-[4px] text-[white] mt-[70px]">View All
+                Products</button>
+        </center>
+
+        <div class="flex gap-[8px] items-center mt-[50px] ml-[120px]">
+            <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
+            <h3 class="text-[red] text-[30px] ">Categories</h3>
+        </div>
+        <div class="flex items-center justify-around">
+            <div class="flex gap-[90px]">
+                <h1 class="text-[40px] font-[700]">Browse By Category</h1>
+            </div>
+            <div class="flex">
+                <img src="./Fill With Left Arrow.png" alt="">
+                <img src="./Fill with Right Arrow.png" alt="">
+            </div>
+        </div>
+        <section id="d11" class="flex justify-around m-[20px]">
+            <div class="w-[170px] h-[145px] border border-[#0000004D] pt-[30px] rounded-[4px]">
+                <center>
+                    <img src="./1.png" alt="">
+                    <h1>Phones</h1>
+                </center>
+            </div>
+            <!-- 2 -->
+            <div class="w-[170px] h-[145px] border border-[#0000004D] pt-[30px] rounded-[4px]">
+                <center>
+                    <img src="./2.png" alt="">
+                    <h1>Computers</h1>
+                </center>
+            </div>
+            <!-- 3 -->
+            <div class="w-[170px] h-[145px] border border-[#0000004D] pt-[30px] rounded-[4px]">
+                <center>
+                    <img src="./3.png" alt="">
+                    <h1>SmartWatch</h1>
+                </center>
+            </div>
+            <!-- 4 -->
+            <div class="w-[170px] h-[145px] border border-[#0000004D] pt-[30px] rounded-[4px] bg-[#DB4444]">
+                <center>
+                    <img src="./4.png" alt="">
+                    <h1 class="text-[white]">Camera</h1>
+                </center>
+            </div>
+            <!-- 5 -->
+            <div class="w-[170px] h-[145px] border border-[#0000004D] pt-[30px] rounded-[4px]">
+                <center>
+                    <img src="./5.png" alt="">
+                    <h1>HeadPhones</h1>
+                </center>
+            </div>
+            <!-- 6 -->
+            <div class="w-[170px] h-[145px] border border-[#0000004D] pt-[30px] rounded-[4px]">
+                <center>
+                    <img src="./6.png" alt="">
+                    <h1>Gaming</h1>
+                </center>
+            </div>
+        </section>
+        <div class="mt-[120px]">
+            <div class="flex gap-[8px] items-center mt-[50px] ml-[120px]">
+                <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
+                <h3 class="text-[red] text-[30px] ">This Month</h3>
+            </div>
+            <div class="flex items-center justify-around">
+                <div class="flex gap-[90px]">
+                    <h1 class="text-[40px] font-[700]">Best Selling Products</h1>
+                </div>
+                <div class="flex">
+                    <button class="w-[159px] h-[56px] rounded-[4px] bg-[#DB4444] text-[white]">View All</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="d9" class=" flex justify-center gap-[20px] font-[600] mt-[30px]">
+            <!-- 1 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div></div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img src="./pink.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>The north coat</h1>
+                    <h1 class="text-[#DB4444]">$260 <span class="text-[#000000]">$360</span></h1>
+                    <h1>⭐⭐⭐⭐⭐ <span class="text-[#000000]">(65)</span></h1>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div></div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img src="./gucci.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>Gucci duffle bag</h1>
+                    <h1 class="text-[#DB4444]">$960 <span class="text-[#000000]">$1160</span></h1>
+                    <h1>⭐⭐⭐⭐⭐ <span class="text-[#000000]">(65)</span> </h1>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+
+                        <div class="flex justify-between">
+                            <div></div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img class="mt-[10px]" src="./kalonka.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>RGB liquid CPU Cooler</h1>
+                    <h1 class="text-[#DB4444]">$160 <span class="text-[#000000]">$170</span></h1>
+                    <h1>⭐⭐⭐⭐⭐ <span class="text-[#000000]">(65)</span></h1>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+
+                        <div class="flex justify-between">
+                            <div></div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img class="w-[110px]" src="./javon.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>Small BookSelf</h1>
+                    <h1 class="text-[#DB4444]">$360</h1>
+                    <h1>⭐⭐⭐⭐⭐ <span class="text-[#000000]">(65)</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="d10" class="flex items-center justify-around h-[500px] bg-[#000000] mt-[50px]">
+            <div>
+                <p class="text-[#00FF66]">Categories</p>
+                <h1 class="text-[white] text-[45px]">Enhance Your <br> Music Experience</h1>
+                <div class="flex gap-[8px] mt-[30px]">
+                    <div class="w-[62px] h-[62px] rounded-[999px] bg-[white]">
+                        <center>
+                            <h1>23 Hours</h1>
+                        </center>
+                    </div>
+                    <div class="w-[62px] h-[62px] rounded-[999px] bg-[white]">
+                        <center>
+                            <h1>205 Days</h1>
+                        </center>
+                    </div>
+                    <div class="w-[62px] h-[62px] rounded-[999px] bg-[white]">
+                        <center>
+                            <h1>59 Minutes</h1>
+                        </center>
+                    </div>
+                    <div class="w-[62px] h-[62px] rounded-[999px] bg-[white]">
+                        <center>
+                            <h1>35 Seconds</h1>
+                        </center>
+                    </div>
+                </div>
+                <button class="w-[171px] h-[56px] rounded-[4px] bg-[#00FF66] text-[white] mt-[50px]">Buy Now!</button>
+            </div>
+            <img src="./boombox.png" alt="">
+        </section>
+        <div class="flex gap-[8px] items-center mt-[50px] ml-[120px]">
+            <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
+            <h3 class="text-[red] text-[30px] ">Our Products</h3>
+        </div>
+        <div class="flex items-center justify-around">
+            <div class="flex gap-[90px]">
+                <h1 class="text-[40px] font-[700]">Explore Our Products</h1>
+            </div>
+            <div class="flex">
+                <img src="./Fill With Left Arrow.png" alt="">
+                <img src="./Fill with Right Arrow.png" alt="">
+            </div>
+        </div>
+
+        <section class=" flex justify-center gap-[20px] font-[600] mt-[30px]">
+            <!-- 1 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div></div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img class="w-[90px]" src="./dog.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>Breed Dry Dog Food</h1>
+                    <h1 class="text-[#DB4444]">$100 ⭐⭐⭐⭐⭐ <span class="text-[#000000]">(35)</span></h1>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div></div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img class="w-[90px]" src="./kamera.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>CANON EOS DSLR Camera</h1>
+                    <h1 class="text-[#DB4444]">$360 ⭐⭐⭐⭐⭐ <span class="text-[#000000]">(95)</span></h1>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div></div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img class="w-[110px]" src="./notebook.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>RGB liquid CPU Cooler</h1>
+                    <h1 class="text-[#DB4444]">$100 ⭐⭐⭐⭐⭐ <span class="text-[#000000]">(35)</span></h1>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div></div>
+                            <div class="pl-[00px]">
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center">
+                                    <img src="./Vector (26).png" alt=""></div>
+                                <div
+                                    class="w-[34px] h-[34px] rounded-[99px] bg-[white] flex items-center justify-center mt-[5px]">
+                                    <img src="./Group (3).png" alt=""></div>
+                            </div>
+                        </div>
+                        <center><img class="w-[90px]" src="./krem.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>Curology Product Set </h1>
+                    <h1 class="text-[#DB4444]">$500 ⭐⭐⭐⭐⭐ <span class="text-[#000000]">(145)</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="d13" class=" flex justify-center gap-[20px] font-[600] mt-[60px]">
+            <!-- 1 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="w-[55px] h-[26px] rounded-[4px] text-[white] bg-[#00FF66] pl-[9px]">
+                            <h1>NEW</h1>
+                        </div>
+                        <center><img src="./mers.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>Kids Electric Car</h1>
+                    <h1 class="text-[#DB4444]">$960 ⭐⭐⭐⭐⭐ <span class="text-[#000000]">(65)</span></h1>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <center><img src="./butsa.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>Jr. Zoom Soccer Cleats</h1>
+                    <h1 class="text-[#DB4444]">$1160 ⭐⭐⭐⭐⭐ <span class="text-[#000000]">(35)</span></h1>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <div class="w-[55px] h-[26px] rounded-[4px] text-[white] bg-[#00FF66] pl-[9px]">
+                            <h1>NEW</h1>
+                        </div>
+                        <center><img class="mt-[10px]" src="./jostik.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>GP11 Shooter USB Gamepad</h1>
+                    <h1 class="text-[#DB4444]">$660 ⭐⭐⭐⭐⭐ <span class="text-[#000000]">(55)</span></h1>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div>
+                <div class="w-[270px] h-[250px] bg-[#F5F5F5] rounded-[9px] p-[20px] ">
+                    <div>
+                        <center><img src="./kiyim.png" alt=""></center>
+                    </div>
+                </div>
+                <div class="p-[10px]">
+                    <h1>Quilted Satin Jacket</h1>
+                    <h1 class="text-[#DB4444]">$660 ⭐⭐⭐⭐⭐ <span class="text-[#000000]">(55)</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <center>
+            <button class="w-[234px] h-[56px] bg-[#DB4444] rounded-[4px] text-[white] mt-[130px]">View All
+                Products</button>
+        </center>
+
+        <div class="flex gap-[8px] items-center mt-[200px] ml-[120px]">
+            <div class="w-[30px] h-[60px] rounded-[7px] bg-[red]"></div>
+            <h3 class="text-[red] text-[30px] ">Our Products</h3>
+        </div>
+        <div class="ml-[120px]">
+            <div class="flex gap-[90px]">
+                <h1 class="text-[40px] font-[700]">Explore Our Products</h1>
+            </div>
+
+            <section class="flex justify-around mt-[50px]">
+                <div class="w-[570px] h-[600px] rounded-[4px] bg-[#000000]">
+                    <center> <img class="mt-[80px]" src="./a1.png" alt=""></center>
+                </div>
+                <div>
+                    <div class="w-[570px] h-[284px] rounded-[4px] bg-[#000000]">
+                        x
+                    </div>
+                    <div class="flex mt-[32px] gap-[30px]">
+                        <div class="w-[270px] h-[284px] rounded-[4px] bg-[#000000]">
+                            <center><img class="mt-[60px]" src="./Frame 707.png" alt=""></center>
+                        </div>
+                        <div class="w-[270px] h-[284px] rounded-[4px] bg-[#000000]">
+                            <center><img class="mt-[60px]" src="./a3.png" alt=""></center>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="flex justify-center mt-[60px] gap-[80px]">
+                <div>
+                    <center>
+                        <img src="./Services.png" alt="">
+                        <h1 class="font-[700]">FREE AND FAST DELIVERY</h1>
+                        <h4>Free delivery for all orders over $140</h4>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <img src="./Services (1).png" alt="">
+                        <h1 class="font-[700]">24/7 CUSTOMER SERVICE</h1>
+                        <h4>Friendly 24/7 customer support</h4>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <img src="./Services (2).png" alt="">
+                        <h1 class="font-[700]">MONEY BACK GUARANTEE</h1>
+                        <h4>We reurn money within 30 days</h4>
+                    </center>
+                </div>
+            </section>
+
+
+    </main>
+
+    <footer
+        class="h-[440px] bg-[#000000] mt-[200px] flex justify-around p-[20px] text-[white] pt-[40px] font-[400] text-[20px] leading-[50px]">
+        <article>
+            <h1 class="font-[900] text-[30px]">Exclusive</h1>
+            <p>Subscribe</p>
+            <p>Get 10% off your first order</p>
+            <button class="w-[217px] h-[48px] rounded-[4px] border border-[white] items-center ">Enter your
+                email</button>
+        </article>
+
+        <article>
+            <h1 class="font-[900] text-[30px]">Support</h1>
+            <p>111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
+            <p>exclusive@gmail.com</p>
+            <p>+88015-88888-9999</p>
+        </article>
+
+        <article>
+            <h1 class="font-[900] text-[30px]">Account</h1>
+            <p>My Account</p>
+            <p>Login / Register</p>
+            <p>Cart</p>
+            <p>Wishlist</p>
+            <p>Shop</p>
+        </article>
+
+        <article>
+            <h1 class="font-[700] text-[30px]">Quick Link</h1>
+            <p>Privacy Policy</p>
+            <p>Terms Of Use</p>
+            <p>FAQ</p>
+            <p>Contact</p>
+        </article>
+
+        <article>
+            <h1 class="font-[900] text-[30px]">Download App</h1>
+            <p>Save $3 with App New User Only</p>
+            <img src="Frame 719.png" alt="">
+            <div class="flex gap-[15px] mt-[17px]">
+                <img src="./Vector (23).png" alt="">
+                <img src="./Vector (24).png" alt="">
+                <img src="./Group (2).png" alt="">
+                <img src="./Vector (25).png" alt="">
+            </div>
+
+        </article>
+
+    </footer>
+</body>
+
+</html>
