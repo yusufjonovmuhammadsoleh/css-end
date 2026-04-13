@@ -11,13 +11,15 @@
                 
             }
             nav ul:nth-child(2){
-                display: none;
+                display: flex;
+                gap: 10px;
+                font-size: 13px;
             }
               nav ul:nth-child(3){
                 display: none;
             }
               nav ul:nth-child(4){
-                display: block;
+                display: none;
             }
             #d1{
                 display: grid;
@@ -37,14 +39,15 @@
             #d2{
                 display: grid;
                 border: 1px solid black;
-                width: 100%;
+                width: 400px;
+                margin-left: -370px;
             }
             #d3{
                 display: grid;
                 margin: 10px;
             }
-            #d4{
-                width: 100%;
+            #d4 input{
+                width: 400px;
             }
                footer{
                 flex-wrap: wrap;
@@ -52,6 +55,9 @@
                 width: 100%;
                 margin: 10px;
                 
+            }
+            #d5 button{
+                display: none;
             }
         }
      </style>
@@ -108,7 +114,7 @@
                    <p>Emails: support@exclusive.com</p>
                 </div>
                 </div>
-                <div class=" w-[800px] h-[457px] font-[500] p-[40px] border border-[#F5F5F5]">
+                <div id="d5" class=" w-[800px] h-[457px] font-[500] p-[40px] border border-[#F5F5F5]">
                     <div id="d3">
                         <input class="w-[235px] h-[50px] rounded-[4px] bg-[#F5F5F5] p-[14px]" type="text" placeholder="Your Name * ">
                         <input class="w-[235px] h-[50px] rounded-[4px] bg-[#F5F5F5] p-[14px]"  type="email" placeholder="Your Email *">
